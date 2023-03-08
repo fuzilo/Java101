@@ -59,6 +59,26 @@ public class Cliente {
         this.rg = rg;
     }
     
+    // Criar métodos cadastrar cliente e listar cliente void()
+
+    public void CadastrarCliente() {
+        System.out.println("Digite o nome do Cliente\n");
+        setNome(leia.next());
+        System.out.println("Digite o endereço do cliente\n");
+        setEnd(leia.next());
+        System.out.println("Digite o RG do Cliente\n");
+        setRg(leia.next());
+    }
+
+    public void ListarCliente(){
+        System.out.println("Os dados do cliente:\n"
+                +"\nNome: "+getNome()
+                +"\nEndereço: "+getEnd()
+                +"\nRG: "+getRg()); 
+
+        }
+    
+    
    
     
 }
